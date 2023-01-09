@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Yeon Sung", cursive;
+  font-size: 24px;
+}
+.setting-backbutton {
+  display: flex;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 1px;
+}
+.setting-title {
+  display: flex;
+  justify-content: center;
+  margin: 30px 20px;
+}
+.setting-layout-small {
+  margin: 0 auto;
+  width: 355px;
+  height: 100%;
+  background: #e9f3ef;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.setting-layout-normal {
+  margin: 0 auto;
+  width: 355px;
+  height: 100%;
+  background: #e9f3ef;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.setting-layout-big {
+  margin: 0 auto;
+  width: 355px;
+  height: 100%;
+  background: #e9f3ef;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.setting-layout-small > div {
+  display: flex;
+  margin-left: 20px;
+}
+.setting-layout-small > div h3 {
+  margin-left: 10px;
+}
+.setting-layout-small > div .setting-movebun {
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  border: 1px solid #ffffff;
+}
+.setting-layout-big > div {
+  display: flex;
+  margin-left: 20px;
+}
+.setting-layout-big > div h3 {
+  margin-left: 10px;
+}
+.setting-layout-normal > div {
+  display: flex;
+  margin-left: 20px;
+}
+.setting-layout-normal > div h3 {
+  margin-left: 10px;
+}
+.setting-reset-btn {
+  display: none;
+}

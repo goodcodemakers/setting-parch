@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 정보</title>
+    <link rel="stylesheet" href="/css/userinfo.css" />
+  </head>
+  <body>
+    
+      <a href="#" class="backbutton">
+        <img src="/images/ion_arrow-back.png" alt="뒤로가기" />
+      </a>
+      <h1 class="userinfo-title-main">내 정보</h1>
+    
+
+    <form action="/index.js" method="post">
+      <input
+        type="file"
+        accept="image/*"
+        required
+        multiple
+        style="display: none"
+        class="real-upload"
+      />
+      <div class="userinfo-usertitle">
+        <img src="/images/mdi_user.png" alt="기본이미지" class="uploadimg" />
+        <input name="username" type="text" class="userinfo-usertitle-username" placeholder="{name}" value="홍길동" ></input>
+      </div>
+      <div class="userinfo-container">
+          <h3>생년월일</h3>
+          <div class="userinfo-container-size18">           
+            <input type="text" name="year" class="userinfo-birthday" id="userinfo-year"  oninput="this.value = this.value.replace(/[^0-9.]/g,'').replace(/(\..*)\./g,'$1')" maxlength="4"/> <p>년</p>
+            <input type="text" name="month" class="userinfo-birthday" id="userinfo-month" oninput="this.value = this.value.replace(/[^0-9.]/g,'').replace(/(\..*)\./g,'$1')" maxlength="2"/><p>월</p>
+            <input type="text" name="day" class="userinfo-birthday" id="userinfo-day" oninput="this.value = this.value.replace(/[^0-9.]/g,'').replace(/(\..*)\./g,'$1')" maxlength="2"/><p>일</p>
+        </div>
+    </div>
+        </div>
+      <div class="userinfo-container">
+        <h3 >담배 가격</h3>
+        <div class="userinfo-container-size28">
+            <input type="text" name="price" id="userinfo-price" />
+            <p>원</p> 
+        </div>
+      </div>
+      <div class="userinfo-container">
+        <h3>하루 흡연량</h3>
+        <div class="userinfo-container-size28">
+        <input
+          type="text"
+          name="oneday-smoking"
+          id="userinfo-oneday-smoking"
+          
+          /> 
+          <p>개피</p> 
+        </div>
+      </div >
+      <div class="userinfo-container">
+        <h3>흡연 시작일</h3>
+        <div class="userinfo-container-size18">
+            <input
+              type="text"
+              name="smoking-startyear"
+              id="userinfo-smoking-startyear"
+            /> <p>년</p> 
+            <input
+              type="text"
+              name="smoking-startmonth"
+              id="userinfo-smoking-startmonth"
+            /> <p>월</p>
+            <input
+              type="text"
+              name="smoking-startday"
+              id="userinfo-smoking-startday"
+            /> <p>일</p>
+        </div>
+      </div>
+      <div class="userinfo-container">
+          <h3>금연 시작일</h3>
+        <div class="userinfo-container-size18">
+            <input
+              type="text"
+              name="smoking-endtyear"
+              id="userinfo-smoking-endyear"
+            /> <p>년</p>
+            <input
+              type="text"
+              name="smoking-endmonth"
+              id="userinfo-smoking-endmonth"
+            /> <p>월</p>
+            <input
+              type="text"
+              name="smoking-endday"
+              id="userinfo-smoking-endday"
+            /> <p>일</p>
+        </div>
+      </div>
+      
+
+          <button type="submit" class="userinfo-submit">수정</button>
+        
+    </form>
+    <script>
+      const upload = document.querySelector(".uploadimg");
+      const realUpload = document.querySelector(".real-upload");
+      upload.addEventListener("click", () => realUpload.click());
+    </script>
+  </body>
+</html>
