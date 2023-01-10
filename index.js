@@ -17,6 +17,7 @@ app.get("/010", async function (req, res) {
   //   console.log(JSON.stringify(uesr, null, 2));
   res.render("pages/setting.ejs");
 });
+
 //포트연결
 const port = 3001;
 app.listen(port, () => {
