@@ -38,16 +38,7 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
 }
-.setting-layout-big {
-  margin: 0 auto;
-  width: 355px;
-  height: 100%;
-  background: #e9f3ef;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  padding-top: 10px;
-}
+
 .setting-layout-small .setting-icontitle {
   display: flex;
   margin-left: 20px;
@@ -84,6 +75,16 @@ body {
 .setting-ellipse.move {
   transform: translate(30px);
 }
+.setting-layout-big {
+  margin: 0 auto;
+  width: 355px;
+  height: 100%;
+  background: #e9f3ef;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
 .setting-layout-big .setting-icontitle {
   display: flex;
   margin-left: 20px;
@@ -92,7 +93,69 @@ body {
 .setting-layout-big .setting-icontitle h3 {
   margin-left: 10px;
 }
+.setting-layout-big .reset-div{
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px;
+  margin-bottom: 10px;
+}
+.setting-layout-big .reset-div button{
+  border: none;
+  color: #ffffff;
+  background: #62d2a2;
+  width: 335px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 28px;
+  font-family: "Yeon Sung", cursive;;
+}
+.setting-modal-bg{
+  display: none;
+}
+.setting-modal-bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  
+  background: rgba(0, 0, 0, 0.7);
+}
 
+
+.setting-layout-big .reset-div .setting-modal{
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 5px 20px 0px #000;
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: 110px;
+  left: 28px;
+  padding-bottom:20px;
+  padding-top: 65px;
+  border: 1px solid #62d2a2;
+  
+  z-index: 30;
+}
+.setting-layout-big .reset-div .setting-modal > button{
+width: 280px;
+height: 50px;
+border-radius: 10px;
+margin: 0px auto;
+margin-top: 30px;
+
+
+}
+.setting-layout-big .reset-div .setting-modal h1{
+  font-size: 36px;
+  text-align: center;
+ 
+}
 .setting-layout-normal .setting-icontitl {
   display: flex;
   margin-left: 20px;
@@ -101,6 +164,7 @@ body {
 
 .setting-layout-normal > .setting-icontitl h3 {
   margin-left: 10px;
+  line-height: 10px;
 }
 .setting-layout-normal .setting-vision .space-between {
   display: flex;
@@ -114,9 +178,3 @@ body {
   color: #1028ff;
 }
 
-.container.acc {
-  filter: brightness(50%);
-  background: rgba(0, 0, 0, 0.7);
-}
-.setting-layout-big {
-}

@@ -46,9 +46,42 @@
             src="/images/mdi_trash-can-outline.png"
             alt="데이더비우기 아이콘"
           /> <h3>데이터</h3>
-       <div></div>
-       <div></div>
-       <div></div>
+        </div>
+        <div class="reset-div">
+          <button>다이어리 초기화</button>
+          <div class="setting-modal-bg">
+            <div class="setting-modal">
+              <h1>앗!</h1>
+              <h1>정말로 다이어리</h1>
+              <h1>초기화를 하시겠습니까?</h1>
+              <button>확인</button>
+            </div>
+          </div>
+        </div>
+        <div class="reset-div">
+          <button>사용자 정보 초기화</button>
+          <div class="setting-modal-bg">
+            <div class="setting-modal">
+              <h1>앗!</h1>
+              <h1>정말로 사용자 정보</h1>
+              <h1>초기화를 하시겠습니까?</h1>
+              <button>확인</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="reset-div">
+          <button>전체 초기화</button>
+          <div class="setting-modal-bg">
+            <div class="setting-modal">
+              <h1>앗!</h1>
+             <h1>정말로 전체</h1>
+             <h1>초기화를 하시겠습니까?</h1>
+             <button>확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="setting-layout-small">
         <div class="setting-icontitle">
           <img
@@ -67,7 +100,7 @@
       </div>
       <div class="setting-layout-normal">
         <div class="setting-icontitl">
-          <img src="/images/material-symbols_info-outline-rounded.png" alt="" />
+          <img src="/images/material-symbols_info-outline-rounded.png" alt="앱정보 아이콘" />
           <h3>앱 정보</h3>
         </div>
         <div class="setting-vision">
@@ -96,13 +129,43 @@
     <script>
       let moveBtn = document.querySelectorAll(".setting-movebun");
       let moveBar = document.querySelectorAll(".setting-ellipse");
-
+      
+      
       moveBtn.forEach((e, i) => {
         e.addEventListener("click", () => {
           moveBar[i].classList.toggle("move");
         });
       });
-      
+      let resetBtn = document.querySelectorAll(".reset-div");
+      let modal = document.querySelectorAll(".setting-modal");
+      let modalBg =document.querySelectorAll(".setting-modal-bg");
+      // resetBtn.forEach((e,i)=>{
+      //   e.addEventListener("click",()=>{
+      //     modalBg[i].classList.add("acc")
+      //   })
+      // })
+      // modalBg.forEach((e,i)=>{
+      //   e.addEventListener("click",()=>{
+      //     modalBg[i].classList.remove("acc")
+      //   })
+      // })
+      // }
+      // for (let i = 0; i < resetBtn.length; i++) {
+      //   resetBtn[i].addEventListener("click",()=>{
+      //     modalBg[i].style.display ="flex"
+      //     if(modalBg[i].style.display ="flex"){
+      //       this.addEventListener("click",()=>{
+      //         modalBg[i].style.display ="none"
+      //       })
+      //     }
+      //   })}//모든모달창이 다뜨고 버튼이벤트는 작동안함...하..
+      //   })}//틀림 작동하지않음...왜?modalBg[i].style.display is not a function at HTMLDivElement 해결했으나 다시 끄는방법이없음..또다시 for문을쓰게 될경우 두for이 둘다 충족하여 충돌 그리하여 if문을넣엇으나 안됨...
+      // for (let i = 0; i < modalBg.length; i++) {
+      //   modalBg[i].addEventListener("click",()=>{
+      //     console.log(modalBg[i]);
+      //     modalBg[i].style.display ="none"
+      //   })}이렇게 할경우 모달창밖을 누를시 사라지나 다시 모달창이 안켜짐..
+
     </script>
   </body>
 </html>
